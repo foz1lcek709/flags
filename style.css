@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+:root{
+    --gary: #2B3844;
+    --blackGray:#202C36;
+    --white:white;
+}
+
+.header {
+  height: 80px;
+  background-color: var(--gary);
+  color: var(--white);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+.btn{
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+}
+
+
+
+.main{
+    background-color: var(--blackGray);
+    height: 1000px;
+    padding: 30px 80px;
+}
+
+.section-one-input{
+    width: 380px;
+    height: 56px;
+    background-color: var(--gary);
+    border: none;
+    outline: none;
+    color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.section-two{
+    margin-top: 48px;
+    display: flex;
+    gap: 75px;
+}
+
+.section-one-input{
+    margin-bottom: 30px;
+}
+
+.card{
+    background: #2b3844;
+    width: 264px;
+    height: 356px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    margin-bottom: 16px;
+}
+
+.card p{
+    line-height: 30px;
+}
+
+body{
+    color: white;
+}
+
+
+
+.informations{
+padding: 20px;
+
+}
+
+
+.section-three{
+    display: flex;
+    gap: 75px;
+}
+
+
+@media (max-width:576px){
+    
+    .header{
+        padding: 0 20px; /* Kamroq padding */
+        height: 50px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 5px 10px; /* Buttonlarni qulayroq qilish */
+    }
+    .logo{
+        font-size: 18px; /* Logo o'lchamini kichraytirish */
+    }
+    .main{
+        padding: 10px; /* Umumiy paddingni kamaytirish */
+    }
+    .section-one-input{
+        width: 100%;
+        padding: 10px; /* Input elementlarini kichraytirish */
+    }
+    .section-two, .section-three{
+        flex-direction: column; /* Elementlarni ustma-ust joylashtirish */
+        gap: 20px; /* Oraliqni kamaytirish */
+    }
+    .card{
+        width: 100%; /* Karta kengligini to'liq ekran qilish */
+        background-color: red;
+        margin-bottom: 40px; /* Marginlarni kamaytirish */
+    }
+}
+
+
